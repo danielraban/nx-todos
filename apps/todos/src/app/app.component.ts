@@ -9,8 +9,10 @@ import { Todo } from '@todos/data';
 })
 export class AppComponent {
   todos: Todo[] = [];
+  title: string;
 
   constructor(private http: HttpClient) {
+    this.title = 'todos';
     this.fetch();
   }
 

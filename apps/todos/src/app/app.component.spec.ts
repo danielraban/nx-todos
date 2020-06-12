@@ -1,10 +1,12 @@
 import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
-
+import { UiModule } from '@todos/ui';
+import { HttpClientModule } from '@angular/common/http';
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [AppComponent],
+      imports: [HttpClientModule, UiModule],
     }).compileComponents();
   }));
 

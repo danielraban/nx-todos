@@ -2,6 +2,6 @@
 
 <todos-todos [todos]="todos"></todos-todos>
 
-<button (click)="addTodo()">Add Todo</button>
+<todos-simple-button (click)="addTodo()" [class]="'blue'" [text]="'Add Todo'"></todos-simple-button>
 
-<button (click)="removeTodo()">Remove Todo</button>
+<todos-simple-button (click)="removeTodo()" [class]="'red'" [text]="'Remove Todo'"></todos-simple-button>
